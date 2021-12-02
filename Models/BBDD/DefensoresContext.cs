@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
@@ -58,4 +58,4 @@ namespace defensoresTablada.Models.BBDD
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
-}
+}*/
