@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace defensoresTablada.Models.BBDD
 {
-    public partial class Usuario : Ejericicio
+    public class Usuario : IDBase
     {
         [Required]
         public string Email { get; set; }
@@ -15,9 +15,10 @@ namespace defensoresTablada.Models.BBDD
         [Required]
         public string Contrasenia { get; set; }
 
-        [Required]
+        
         public string RolUsuario { get; set; }
 
         public Rutina Rutinas { get; set; }
+        public MaximaRepeticion MaximaRepeticions { get; set; }
     }
 }

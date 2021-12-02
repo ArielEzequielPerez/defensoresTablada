@@ -1,13 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-
 namespace defensoresTablada.Models.BBDD
 {
-    public class Rutina : MaximaRepeticion
+    public class IDBase
     {
-        [Required]
-        public int Serie { get; set; }
-
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int ID { get; set; }
     }
 }
