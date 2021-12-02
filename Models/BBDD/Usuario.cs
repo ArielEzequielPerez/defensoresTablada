@@ -7,17 +7,17 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace defensoresTablada.Models.BBDD
 {
-    public partial class Usuario
+    public partial class Usuario : Ejericicio
     {
-
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int IdUsuario { get; set; }
-
         [Required]
         public string Email { get; set; }
 
         [Required]
         public string Contrasenia { get; set; }
+
+        [Required]
+        public string RolUsuario { get; set; }
+
+        public Rutina Rutinas { get; set; }
     }
 }
