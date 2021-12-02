@@ -50,10 +50,7 @@ namespace defensoresTablada.Models.BBDD
 
                 entity.Property(e => e.IdUsuario).ValueGeneratedOnAdd();
 
-                entity.Property(e => e.NombreUsuario)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("nombreUsuario");
+                
             });
 
             OnModelCreatingPartial(modelBuilder);
