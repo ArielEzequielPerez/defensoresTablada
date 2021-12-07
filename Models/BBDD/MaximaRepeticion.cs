@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -14,8 +14,7 @@ namespace defensoresTablada.Models.BBDD
         public int Repeticion { get; set; }
         [Required]
         public int Peso { get; set; }
-        [Required]
-        public DateTime Fecha { get; set; }
+      
 
     }
-}
+}*/

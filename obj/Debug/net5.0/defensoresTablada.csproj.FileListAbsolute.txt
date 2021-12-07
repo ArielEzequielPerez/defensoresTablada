@@ -476,3 +476,10 @@ D:\Usuario\Documentos\GitHub\ProyectoFinal\defensoresTablada\obj\Debug\net5.0\Ra
 D:\Usuario\Documentos\GitHub\ProyectoFinal\defensoresTablada\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 D:\Usuario\Documentos\GitHub\ProyectoFinal\defensoresTablada\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 D:\Usuario\Documentos\GitHub\ProyectoFinal\defensoresTablada\obj\Debug\net5.0\Razor\Views\Home\Actividades.cshtml.g.cs
+D:\Usuario\Documentos\GitHub\ProyectoFinal\defensoresTablada\obj\Debug\net5.0\Razor\Views\Home\CargarRm.cshtml.g.cs
+D:\Usuario\Documentos\GitHub\ProyectoFinal\defensoresTablada\obj\Debug\net5.0\Razor\Views\Home\VerRutina.cshtml.g.cs
+D:\Usuario\Documentos\GitHub\ProyectoFinal\defensoresTablada\obj\Debug\net5.0\Razor\Views\Rutinas\Create.cshtml.g.cs
+D:\Usuario\Documentos\GitHub\ProyectoFinal\defensoresTablada\obj\Debug\net5.0\Razor\Views\Rutinas\Delete.cshtml.g.cs
+D:\Usuario\Documentos\GitHub\ProyectoFinal\defensoresTablada\obj\Debug\net5.0\Razor\Views\Rutinas\Details.cshtml.g.cs
+D:\Usuario\Documentos\GitHub\ProyectoFinal\defensoresTablada\obj\Debug\net5.0\Razor\Views\Rutinas\Edit.cshtml.g.cs
+D:\Usuario\Documentos\GitHub\ProyectoFinal\defensoresTablada\obj\Debug\net5.0\Razor\Views\Rutinas\Index.cshtml.g.cs

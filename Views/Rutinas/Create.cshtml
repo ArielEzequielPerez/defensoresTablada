@@ -1,0 +1,48 @@
+﻿@model defensoresTablada.Models.BBDD.Rutina
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Cargar Ejercicio</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+             <div class="form-group">
+                <label asp-for="NombreDeEjercicio" class="control-label"></label>
+                <input asp-for="NombreDeEjercicio" class="form-control" />
+                <span asp-validation-for="NombreDeEjercicio" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Serie" class="control-label"></label>
+                <input asp-for="Serie" class="form-control" />
+                <span asp-validation-for="Serie" class="text-danger"></span>
+            </div>
+           
+            <div class="form-group">
+                <label asp-for="Repeticion" class="control-label"></label>
+                <input asp-for="Repeticion" class="form-control" />
+                <span asp-validation-for="Repeticion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Peso" class="control-label"></label>
+                <input asp-for="Peso" class="form-control" />
+                <span asp-validation-for="Peso" class="text-danger"></span>
+            </div>
+           
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Volver</a>
+</div>
+

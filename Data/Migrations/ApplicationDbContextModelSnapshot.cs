@@ -269,7 +269,6 @@ namespace defensoresTablada.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("RolUsuario")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("RutinasID")

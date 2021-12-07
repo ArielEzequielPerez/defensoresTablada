@@ -1,0 +1,58 @@
+﻿@model IEnumerable<defensoresTablada.Models.BBDD.Rutina>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Rutina</h1>
+
+<p>
+    <a asp-action="Create">Agregar Ejercicio</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreDeEjercicio)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Serie)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Repeticion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Peso)
+            </th>
+       
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreDeEjercicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Serie)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.Repeticion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Peso)
+            </td>
+          
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Detalle</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Borrar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

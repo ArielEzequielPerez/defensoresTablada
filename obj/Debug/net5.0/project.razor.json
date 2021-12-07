@@ -15644,6 +15644,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Views\\Rutinas\\Details.cshtml",
+      "TargetPath": "Views\\Rutinas\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
       "FileKind": "mvc"
@@ -15661,6 +15666,11 @@
     {
       "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Views\\Home\\CargarRm.cshtml",
+      "TargetPath": "Views\\Home\\CargarRm.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15734,6 +15744,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Views\\Rutinas\\Create.cshtml",
+      "TargetPath": "Views\\Rutinas\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -15759,6 +15774,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Views\\Rutinas\\Edit.cshtml",
+      "TargetPath": "Views\\Rutinas\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -15766,6 +15786,11 @@
     {
       "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Views\\Home\\VerRutina.cshtml",
+      "TargetPath": "Views\\Home\\VerRutina.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15781,6 +15806,11 @@
     {
       "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Areas\\Identity\\Pages\\Account\\Manage\\GenerateRecoveryCodes.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\GenerateRecoveryCodes.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Views\\Rutinas\\Index.cshtml",
+      "TargetPath": "Views\\Rutinas\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15861,6 +15891,11 @@
     {
       "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Areas\\Identity\\Pages\\Account\\Manage\\Email.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\Email.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Views\\Rutinas\\Delete.cshtml",
+      "TargetPath": "Views\\Rutinas\\Delete.cshtml",
       "FileKind": "mvc"
     }
   ],

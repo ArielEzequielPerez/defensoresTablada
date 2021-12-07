@@ -8,5 +8,6 @@ namespace defensoresTablada.Models.BBDD
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
+        
     }
 }

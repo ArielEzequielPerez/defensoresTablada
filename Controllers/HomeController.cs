@@ -27,6 +27,7 @@ namespace defensoresTablada.Controllers
         {
             return View();
         }
+
         public IActionResult Actividades()
         {
             return View();

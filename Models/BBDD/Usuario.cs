@@ -19,6 +19,5 @@ namespace defensoresTablada.Models.BBDD
         public string RolUsuario { get; set; }
 
         public Rutina Rutinas { get; set; }
-        public MaximaRepeticion MaximaRepeticions { get; set; }
     }
 }

@@ -13,6 +13,6 @@ namespace defensoresTablada.Data
         }
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Rutina> Rutinas { get; set; }
-        public DbSet<MaximaRepeticion> MaximaRepeticiones { get; set; }
+        
     }
 }
