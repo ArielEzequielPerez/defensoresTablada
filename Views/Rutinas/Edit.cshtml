@@ -12,27 +12,30 @@
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
             <div class="form-group">
-                <label asp-for="Serie" class="control-label"></label>
-                <input asp-for="Serie" class="form-control" />
-                <span asp-validation-for="Serie" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NombreDeEjercicio" class="control-label"></label>
+                <label asp-for="NombreDeEjercicio" class="control-label">Nombre del ejercicio</label>
                 <input asp-for="NombreDeEjercicio" class="form-control" />
-                <span asp-validation-for="NombreDeEjercicio" class="text-danger"></span>
+                <span asp-validation-for="NombreDeEjercicio" class="text-danger">Nombre no valido</span>
             </div>
+
+            <div class="form-group">
+                <label asp-for="Serie" class="control-label">Serie</label>
+                <input asp-for="Serie" class="form-control" />
+                <span asp-validation-for="Serie" class="text-danger">valor no valido</span>
+            </div>
+
             <div class="form-group">
                 <label asp-for="Repeticion" class="control-label"></label>
                 <input asp-for="Repeticion" class="form-control" />
-                <span asp-validation-for="Repeticion" class="text-danger"></span>
+                <span asp-validation-for="Repeticion" class="text-danger">valor no valido</span>
             </div>
             <div class="form-group">
                 <label asp-for="Peso" class="control-label"></label>
                 <input asp-for="Peso" class="form-control" />
-                <span asp-validation-for="Peso" class="text-danger"></span>
+                <span asp-validation-for="Peso" class="text-danger"> valor no valido</span>
             </div>
-            
+
             <input type="hidden" asp-for="ID" />
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />

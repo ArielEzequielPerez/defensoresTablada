@@ -15789,11 +15789,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Views\\Home\\VerRutina.cshtml",
-      "TargetPath": "Views\\Home\\VerRutina.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Areas\\Identity\\Pages\\Account\\ForgotPasswordConfirmation.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\ForgotPasswordConfirmation.cshtml",
       "FileKind": "mvc"
