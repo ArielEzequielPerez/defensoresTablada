@@ -1,5 +1,5 @@
 # Descripción de la aplicacion web
-	Es una app web para un club donde un profesional cargue una rutina para un cliente y el mismo pueda ver la rutina. 
+	Es una app web para un club donde un usuario puede cargar una rutina y tener un registro de su maxima repetición el mismo pueda ver la rutina. 
     Ambos tienen que iniciar sesion para poder poder usarla completamente 
 
 ## Requisitos
