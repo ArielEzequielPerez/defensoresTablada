@@ -3,44 +3,56 @@
 @{
     ViewData["Title"] = "Delete";
 }
+<link href="~/css/styles.css" rel="stylesheet" />
+<link href="~/css/site.css" rel="stylesheet" />
 
-<h1>Delete</h1>
+<h1 class="colorLetra centrarTexto">Borrar ejercicio</h1>
 
-<h3>Are you sure you want to delete this?</h3>
+
 <div>
-    <h4>Rutina</h4>
+    <h4 class="colorLetra">Ejercicio</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2 colorLetra">
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd class="col-sm-10 colorLetra">
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt class="col-sm-2 colorLetra">
             @Html.DisplayNameFor(model => model.Serie)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10 colorLetra">
             @Html.DisplayFor(model => model.Serie)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NombreDeEjercicio)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NombreDeEjercicio)
-        </dd>
-        <dt class = "col-sm-2">
+
+        <dt class="col-sm-2 colorLetra">
             @Html.DisplayNameFor(model => model.Repeticion)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10 colorLetra">
             @Html.DisplayFor(model => model.Repeticion)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2 colorLetra">
             @Html.DisplayNameFor(model => model.Peso)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10 colorLetra">
             @Html.DisplayFor(model => model.Peso)
         </dd>
-        
+        <!--
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Imagen)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Imagen)
+        </dd>
+        -->
+
     </dl>
-    
+
     <form asp-action="Delete">
         <input type="hidden" asp-for="ID" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Borrar" class="btn btn-danger" /> |
+        <a asp-action="Index" class="colorLetra">Volver a la lista</a>
     </form>
 </div>

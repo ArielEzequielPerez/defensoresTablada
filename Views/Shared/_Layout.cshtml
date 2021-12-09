@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@using defensoresTablada
+@inject SignInManager<ApplicationUser> SignInManager
+
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -17,21 +22,46 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+
+                    @if (!SignInManager.IsSignedIn(User))
+                    {
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark colorLetra" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark colorLetra" asp-area="" asp-controller="Home" asp-action="Privacy">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark colorLetra" asp-area="" asp-controller="Home" asp-action="Actividades">Actividades</a>
+                            </li>
+                        </ul>
+                    }
+                    else
+                    {
+
                     <ul class="navbar-nav flex-grow-1">
+
                         <li class="nav-item">
-                            <a class="nav-link text-dark colorLetra" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark colorLetra" asp-area="" asp-controller="Rutinas" asp-action="Index">Ver mi rutina</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark colorLetra" asp-area="" asp-controller="Home" asp-action="Privacy">Nosotros</a>
+                            <a class="nav-link text-dark colorLetra" asp-area="" asp-controller="Rutinas" asp-action="Create">Agregar ejercicio</a>
                         </li>
+                        
                         <li class="nav-item">
-                            <a class="nav-link text-dark colorLetra" asp-area="" asp-controller="Home" asp-action="Actividades">Actividades</a>
+                            <a class="nav-link text-dark colorLetra" asp-area="" asp-controller="MaximaRepeticions" asp-action="Index">Ver mi RM</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link text-dark colorLetra" asp-area="" asp-controller="Rutinas" asp-action="Create">Cargar rutina</a>
-                        </li>
+                            <a class="nav-link text-dark colorLetra" asp-area="" asp-controller="MaximaRepeticions" asp-action="Create">Agregar Rm</a>
+                        </li>                 
                     </ul>
+                    }
+
+
                     <partial name="_LoginPartial" />
+
                 </div>
             </div>
         </nav>

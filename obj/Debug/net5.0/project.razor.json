@@ -15814,6 +15814,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Views\\MaximaRepeticions\\Create.cshtml",
+      "TargetPath": "Views\\MaximaRepeticions\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
       "FileKind": "mvc"
@@ -15844,6 +15849,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Views\\MaximaRepeticions\\Delete.cshtml",
+      "TargetPath": "Views\\MaximaRepeticions\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -15851,6 +15861,11 @@
     {
       "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Views\\MaximaRepeticions\\Details.cshtml",
+      "TargetPath": "Views\\MaximaRepeticions\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15874,6 +15889,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Views\\MaximaRepeticions\\Edit.cshtml",
+      "TargetPath": "Views\\MaximaRepeticions\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -15881,6 +15901,11 @@
     {
       "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Views\\Shared\\_LoginPartial.cshtml",
       "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\defensoresTablada\\Views\\MaximaRepeticions\\Index.cshtml",
+      "TargetPath": "Views\\MaximaRepeticions\\Index.cshtml",
       "FileKind": "mvc"
     },
     {

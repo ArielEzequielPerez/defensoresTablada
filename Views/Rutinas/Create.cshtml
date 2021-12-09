@@ -3,38 +3,47 @@
 @{
     ViewData["Title"] = "Create";
 }
-
-<h1>Cargar Ejercicio</h1>
+<link href="~/css/styles.css" rel="stylesheet" />
+<link href="~/css/site.css" rel="stylesheet" />
+<h1 class="colorLetra centrarTexto">Agregar ejercicio</h1>
 
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-             <div class="form-group">
-                <label asp-for="NombreDeEjercicio" class="control-label">Ejercicio</label>
-                <input asp-for="NombreDeEjercicio" class="form-control" />
-                <span asp-validation-for="NombreDeEjercicio" class="text-danger"></span>
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label colorLetra"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
             </div>
 
             <div class="form-group">
-                <label asp-for="Serie" class="control-label">Serie</label>
+                <label asp-for="Serie" class="control-label colorLetra"></label>
                 <input asp-for="Serie" class="form-control" />
                 <span asp-validation-for="Serie" class="text-danger"></span>
             </div>
-           
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Repeticion" class="control-label"></label>
+                <label asp-for="Repeticion" class="control-label colorLetra"></label>
                 <input asp-for="Repeticion" class="form-control" />
                 <span asp-validation-for="Repeticion" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Peso" class="control-label"></label>
+                <label asp-for="Peso" class="control-label colorLetra"></label>
                 <input asp-for="Peso" class="form-control" />
                 <span asp-validation-for="Peso" class="text-danger"></span>
             </div>
-           
+
+            <!--
+    <div class="form-group">
+        <label asp-for="Imagen" class="control-label"></label>
+        <input asp-for="Imagen" class="form-control" />
+        <span asp-validation-for="Imagen" class="text-danger"></span>
+    </div>
+        -->
+
             <div class="form-group">
                 <input type="submit" value="Agregar" class="btn btn-primary" />
             </div>
@@ -43,6 +52,6 @@
 </div>
 
 <div>
-    <a asp-action="Index">Volver</a>
+    <a asp-action="Index" class="colorLetra">Volver a la lista</a>
 </div>
 

@@ -1,0 +1,48 @@
+﻿@model IEnumerable<defensoresTablada.Models.BBDD.MaximaRepeticion>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<link href="~/css/styles.css" rel="stylesheet" />
+<link href="~/css/site.css" rel="stylesheet" />
+<link href="~/cssIcon/all.min.css" rel="stylesheet" />
+
+<h1 class="colorLetra centrarTexto TamanioTexto" >Ver maxima repetición</h1>
+
+<table class="table centrarTexto">
+    <thead>
+        <tr>
+            <th class="colorLetra tamanioTextoTabla">
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th class="colorLetra tamanioTextoTabla">
+                @Html.DisplayNameFor(model => model.Repeticion)
+            </th>
+            <th class="colorLetra tamanioTextoTabla">
+                @Html.DisplayNameFor(model => model.Peso)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td class="colorLetra TamanioTextoLista">
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td class="colorLetra TamanioTextoLista">
+                @Html.DisplayFor(modelItem => item.Repeticion)
+            </td>
+            <td class="colorLetra TamanioTextoLista">
+                @Html.DisplayFor(modelItem => item.Peso)
+            </td>
+
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID"><i class="fas fa-edit fa-2x"></i></a> |
+                <a asp-action="Delete" asp-route-id="@item.ID"><i class="fas fa-trash-alt fa-2x"></i></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,44 @@
+﻿@model defensoresTablada.Models.BBDD.MaximaRepeticion
+
+@{
+    ViewData["Title"] = "Delete";
+}
+<link href="~/css/styles.css" rel="stylesheet" />
+<link href="~/css/site.css" rel="stylesheet" />
+
+
+<h1 class="colorLetra centrarTexto cambiarTamanioTexto"> Borrar ejercicio</h1>
+
+<div>
+    <h4 class="colorLetra">Maxima repeticion</h4>
+    <hr />
+    <dl class="row">
+
+        <dt class="col-sm-2 colorLetra">
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd class="col-sm-10 colorLetra">
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt class="col-sm-2 colorLetra">
+            @Html.DisplayNameFor(model => model.Repeticion)
+        </dt>
+        <dd class="col-sm-10 colorLetra">
+            @Html.DisplayFor(model => model.Repeticion)
+        </dd>
+        <dt class="col-sm-2 colorLetra">
+            @Html.DisplayNameFor(model => model.Peso)
+        </dt>
+        <dd class="col-sm-10 colorLetra">
+            @Html.DisplayFor(model => model.Peso)
+        </dd>
+
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Borrar" class="btn btn-danger" /> |
+        <a asp-action="Index" class="colorLetra">Volver a la lista</a>
+    </form>
+</div>

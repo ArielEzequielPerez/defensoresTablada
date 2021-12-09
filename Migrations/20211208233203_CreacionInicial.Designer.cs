@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using defensoresTablada.Data;
 
-namespace defensoresTablada.Data.Migrations
+namespace defensoresTablada.Migrations
 {
     [DbContext(typeof(DefensoresContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211208233203_CreacionInicial")]
+    partial class CreacionInicial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -68,71 +70,6 @@ namespace defensoresTablada.Data.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetRoleClaims");
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUser", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<int>("AccessFailedCount")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.Property<bool>("EmailConfirmed")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("LockoutEnabled")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTimeOffset?>("LockoutEnd")
-                        .HasColumnType("datetimeoffset");
-
-                    b.Property<string>("NormalizedEmail")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.Property<string>("NormalizedUserName")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.Property<string>("PasswordHash")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PhoneNumber")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("PhoneNumberConfirmed")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("SecurityStamp")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("TwoFactorEnabled")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("UserName")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("NormalizedEmail")
-                        .HasDatabaseName("EmailIndex");
-
-                    b.HasIndex("NormalizedUserName")
-                        .IsUnique()
-                        .HasDatabaseName("UserNameIndex")
-                        .HasFilter("[NormalizedUserName] IS NOT NULL");
-
-                    b.ToTable("AspNetUsers");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -219,6 +156,100 @@ namespace defensoresTablada.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("defensoresTablada.ApplicationUser", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Apellido")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("Nombre")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedEmail")
+                        .HasDatabaseName("EmailIndex");
+
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasDatabaseName("UserNameIndex")
+                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.ToTable("AspNetUsers");
+                });
+
+            modelBuilder.Entity("defensoresTablada.Models.BBDD.Cliente", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("ProfesionalID")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("ProfesionalID");
+
+                    b.ToTable("Clientes");
+                });
+
             modelBuilder.Entity("defensoresTablada.Models.BBDD.MaximaRepeticion", b =>
                 {
                     b.Property<int>("ID")
@@ -226,14 +257,10 @@ namespace defensoresTablada.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("ClienteID")
+                        .HasColumnType("int");
 
-                    b.Property<DateTime>("Fecha")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("NombreDeEjercicio")
+                    b.Property<string>("Nombre")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -245,52 +272,61 @@ namespace defensoresTablada.Data.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("MaximaRepeticiones");
+                    b.HasIndex("ClienteID");
 
-                    b.HasDiscriminator<string>("Discriminator").HasValue("MaximaRepeticion");
+                    b.ToTable("MaximasRepeticiones");
                 });
 
-            modelBuilder.Entity("defensoresTablada.Models.BBDD.Usuario", b =>
+            modelBuilder.Entity("defensoresTablada.Models.BBDD.Profesional", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Contrasenia")
+                    b.Property<string>("Apellido")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nombre")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("MaximaRepeticionsID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("RolUsuario")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("RutinasID")
-                        .HasColumnType("int");
 
                     b.HasKey("ID");
 
-                    b.HasIndex("MaximaRepeticionsID");
-
-                    b.HasIndex("RutinasID");
-
-                    b.ToTable("Usuarios");
+                    b.ToTable("Profesionales");
                 });
 
             modelBuilder.Entity("defensoresTablada.Models.BBDD.Rutina", b =>
                 {
-                    b.HasBaseType("defensoresTablada.Models.BBDD.MaximaRepeticion");
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int?>("ClienteID")
+                        .HasColumnType("int");
+
+                    b.Property<byte>("Imagen")
+                        .HasColumnType("tinyint");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Peso")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Repeticion")
+                        .HasColumnType("int");
 
                     b.Property<int>("Serie")
                         .HasColumnType("int");
 
-                    b.HasDiscriminator().HasValue("Rutina");
+                    b.HasKey("ID");
+
+                    b.HasIndex("ClienteID");
+
+                    b.ToTable("Rutinas");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -304,7 +340,7 @@ namespace defensoresTablada.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("defensoresTablada.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -313,7 +349,7 @@ namespace defensoresTablada.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("defensoresTablada.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -328,7 +364,7 @@ namespace defensoresTablada.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("defensoresTablada.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -337,26 +373,44 @@ namespace defensoresTablada.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("defensoresTablada.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("defensoresTablada.Models.BBDD.Usuario", b =>
+            modelBuilder.Entity("defensoresTablada.Models.BBDD.Cliente", b =>
                 {
-                    b.HasOne("defensoresTablada.Models.BBDD.MaximaRepeticion", "MaximaRepeticions")
-                        .WithMany()
-                        .HasForeignKey("MaximaRepeticionsID");
+                    b.HasOne("defensoresTablada.Models.BBDD.Profesional", null)
+                        .WithMany("Clientes")
+                        .HasForeignKey("ProfesionalID");
+                });
 
-                    b.HasOne("defensoresTablada.Models.BBDD.Rutina", "Rutinas")
-                        .WithMany()
-                        .HasForeignKey("RutinasID");
+            modelBuilder.Entity("defensoresTablada.Models.BBDD.MaximaRepeticion", b =>
+                {
+                    b.HasOne("defensoresTablada.Models.BBDD.Cliente", null)
+                        .WithMany("MaximasRepeticiones")
+                        .HasForeignKey("ClienteID");
+                });
 
-                    b.Navigation("MaximaRepeticions");
+            modelBuilder.Entity("defensoresTablada.Models.BBDD.Rutina", b =>
+                {
+                    b.HasOne("defensoresTablada.Models.BBDD.Cliente", null)
+                        .WithMany("Rutinas")
+                        .HasForeignKey("ClienteID");
+                });
+
+            modelBuilder.Entity("defensoresTablada.Models.BBDD.Cliente", b =>
+                {
+                    b.Navigation("MaximasRepeticiones");
 
                     b.Navigation("Rutinas");
+                });
+
+            modelBuilder.Entity("defensoresTablada.Models.BBDD.Profesional", b =>
+                {
+                    b.Navigation("Clientes");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,1 +1,0 @@
-ALTER TABLE dbo.Rutinas DROP COLUMN Fecha;

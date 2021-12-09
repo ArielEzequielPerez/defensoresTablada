@@ -482,3 +482,8 @@ D:\Usuario\Documentos\GitHub\ProyectoFinal\defensoresTablada\obj\Debug\net5.0\Ra
 D:\Usuario\Documentos\GitHub\ProyectoFinal\defensoresTablada\obj\Debug\net5.0\Razor\Views\Rutinas\Details.cshtml.g.cs
 D:\Usuario\Documentos\GitHub\ProyectoFinal\defensoresTablada\obj\Debug\net5.0\Razor\Views\Rutinas\Edit.cshtml.g.cs
 D:\Usuario\Documentos\GitHub\ProyectoFinal\defensoresTablada\obj\Debug\net5.0\Razor\Views\Rutinas\Index.cshtml.g.cs
+D:\Usuario\Documentos\GitHub\ProyectoFinal\defensoresTablada\obj\Debug\net5.0\Razor\Views\MaximaRepeticions\Create.cshtml.g.cs
+D:\Usuario\Documentos\GitHub\ProyectoFinal\defensoresTablada\obj\Debug\net5.0\Razor\Views\MaximaRepeticions\Delete.cshtml.g.cs
+D:\Usuario\Documentos\GitHub\ProyectoFinal\defensoresTablada\obj\Debug\net5.0\Razor\Views\MaximaRepeticions\Details.cshtml.g.cs
+D:\Usuario\Documentos\GitHub\ProyectoFinal\defensoresTablada\obj\Debug\net5.0\Razor\Views\MaximaRepeticions\Edit.cshtml.g.cs
+D:\Usuario\Documentos\GitHub\ProyectoFinal\defensoresTablada\obj\Debug\net5.0\Razor\Views\MaximaRepeticions\Index.cshtml.g.cs

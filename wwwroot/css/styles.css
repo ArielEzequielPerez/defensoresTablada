@@ -65,7 +65,21 @@
     scroll-behavior: smooth;
   }
 }
+.centrarTexto {
+    text-align: center !important;
+}
 
+.TamanioTexto {
+    font-size: 50px;
+}
+
+.tamanioTextoTabla {
+    font-size: 18px !important;
+}
+
+.TamanioTextoLista {
+    font-size: 20px !important;
+}
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);

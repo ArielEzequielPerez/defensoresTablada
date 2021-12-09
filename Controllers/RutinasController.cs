@@ -54,7 +54,7 @@ namespace defensoresTablada.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Serie,NombreDeEjercicio,Repeticion,Peso,Fecha,ID")] Rutina rutina)
+        public async Task<IActionResult> Create([Bind("Repeticion,Peso,Serie,Imagen,ID,Nombre")] Rutina rutina)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace defensoresTablada.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Serie,NombreDeEjercicio,Repeticion,Peso,Fecha,ID")] Rutina rutina)
+        public async Task<IActionResult> Edit(int id, [Bind("Repeticion,Peso,Serie,Imagen,ID,Nombre")] Rutina rutina)
         {
             if (id != rutina.ID)
             {

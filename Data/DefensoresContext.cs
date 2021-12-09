@@ -5,13 +5,18 @@ using Microsoft.EntityFrameworkCore;
 
 namespace defensoresTablada.Data
 {
-    public class DefensoresContext : IdentityDbContext
+    public class DefensoresContext : IdentityDbContext<ApplicationUser>
     {
         public DefensoresContext(DbContextOptions<DefensoresContext> options)
             : base(options)
         {
         }
-        public DbSet<Usuario> Usuarios { get; set; }
+        
+
+        public DbSet<MaximaRepeticion> MaximasRepeticiones { get; set; }
+        public DbSet<Profesional> Profesionales { get; set; }
+
+        public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Rutina> Rutinas { get; set; }
         
     }
