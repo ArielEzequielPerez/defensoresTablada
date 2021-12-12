@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using defensoresTablada.Data;
 
 namespace defensoresTablada.Migrations
 {
     [DbContext(typeof(DefensoresContext))]
-    partial class DefensoresContextModelSnapshot : ModelSnapshot
+    [Migration("20211212164422_manejoDeRoles")]
+    partial class manejoDeRoles
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

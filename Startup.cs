@@ -32,8 +32,12 @@ namespace defensoresTablada
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDatabaseDeveloperPageExceptionFilter();
 
-            services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
-                .AddEntityFrameworkStores<DefensoresContext>();
+            services.AddDefaultIdentity<ApplicationUser>(options => {
+                options.SignIn.RequireConfirmedAccount = false; 
+                })
+            .AddRoles<IdentityRole>()
+            .AddEntityFrameworkStores<DefensoresContext>();
+            
             services.AddControllersWithViews();
         }
 

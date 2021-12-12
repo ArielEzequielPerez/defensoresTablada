@@ -11,6 +11,7 @@ namespace defensoresTablada
 
         [MaxLength(200)]
         public string Apellido { get; set; }
-
+        public string FirstName { get; internal set; }
+        public string LastName { get; internal set; }
     }
 }
